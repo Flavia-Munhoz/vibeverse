@@ -1,0 +1,55 @@
+# Olá VibeVerser :) !
+
+
+Neste repositório você vai encontrar a estrutura principal do projeto final de semestre de Web desenv.
+
+# Temos as seguintes pastas:
+
+# HTML ........................
+
+Aqui você irá inserir o seu documento html e irá por a seguinte nomeclatura:
+
+pages.html >>>> para estrutura de páginas de navegação que é o modelo 5 do layoute.
+
+forms.html >>>> para estrutura de formulários que é o modelo numero 3 do layoute.
+
+# IMG.........................
+
+Aqui serão depositadas todas as imgs, logos, svgs ... que serão utilizados neste projeto.
+
+Importante nomear as imagens de acordo com o seu conteúdo ou local .
+
+# Exemplo
+
+logo.svg
+guitarra-vermelha.png
+banner-home.jpg
+filme-anos70.png
+
+# JS......................
+
+Aqui será armazenado o conteúdo da lógica para nossas páginas 
+
+No index iremos importar qualquer outro conteúdo JS
+
+# STYLE ..........................
+
+Nesta pasta iremos armazenar todas as páginas de estilo do site.
+
+fonts.css : irá armazenar o import das fontes .
+
+form-main.css : irá armazenar o css para o formulário.
+
+pages-main.css :  irá armazenar o css das páginas de navegação.
+
+main.css: irá conter o importe de todas as páginas de estilo
+
+###################################################################
+
+# index.html >>>> o buscador busca a página index, para rodar o projeto, sendo esta a página principal do nosso site.
+
+
+#######################################################################
+
+Nosso projeto será sincrono com https://vercel.com/
+Qualquer alteração na * branch main * será visto no endereço https://vibeverse-nu.vercel.app/
