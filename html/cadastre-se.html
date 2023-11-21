@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../style/forms/cadastre-se.css">
+    <title>Layout</title>
+
+</head>
+
+<body>
+    <header>
+         <a href="#">Login</a>
+        <a href="#">Quem somos</a>
+    </header>
+    <main>
+        <h1>Cadastro - VibeVerse</h1>
+        <section>
+            <form action="/index.html" method="post">
+
+                <section>
+                    <h2>Informações Pessoais</h2>
+
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div>
+                        <label for="apelido">Como Gosta de Ser Chamado:</label>
+                        <input type="text" id="apelido" name="apelido" required>
+                    </div>
+
+                    <div>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Redes Sociais</h2>
+
+                    <div>
+                        <input type="checkbox" id="whatsapp" name="whatsapp">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="text" id="link_whatsapp" name="link_whatsapp">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="instagram" name="instagram">
+                        <label for="instagram">Instagram</label>
+                        <input type="text" id="link_instagram" name="link_instagram">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="twitter" name="twitter">
+                        <label for="twitter">Twitter</label>
+                        <input type="text" id="link_twitter" name="link_twitter">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Preferências</h2>
+
+                    <div>
+                        <label for="interesses">Interesses Musicais:</label>
+                        <select id="interesses" name="interesses" multiple>
+                            <optgroup label="Estilos Musicais">
+                                <option value="rock">Rock</option>
+                                <option value="reggae">Reggae</option>
+                                <option value="black-musical">Black Musical</option>
+                                <option value="pagode">Pagode</option>
+                                <option value="samba">Samba</option>
+                                <option value="folk">Folk</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="filme_preferido">Estilo de Filme Preferido:</label>
+                        <select id="filme_preferido" name="filme_preferido" multiple>
+                            <optgroup label="Gêneros de Filme">
+                                <option value="terror">Terror</option>
+                                <option value="comedia">Comédia</option>
+                                <option value="suspense">Suspense</option>
+                                <option value="aventura">Aventura</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </section>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>Rodapé</footer>
+
+
+</body>
+
+</html>
