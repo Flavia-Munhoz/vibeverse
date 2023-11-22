@@ -11,7 +11,7 @@ main {
     justify-content: right;
     align-items: center;
     height: 100vh;
-    background-image: url("https://uploaddeimagens.com.br/images/004/669/534/full/login.jpg?1700556752");
+    background-image: url(/img/login.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
