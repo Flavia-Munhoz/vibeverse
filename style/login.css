@@ -35,16 +35,16 @@ fieldset {
     margin-bottom: 15px;
     width: 300px;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 400;
     line-height: 29px;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 
 }
 
 label {
     display: flex;
-    margin-bottom: 5px;
+    margin: 8px;
 }
 
 a {
