@@ -17,7 +17,7 @@ nav,
 main,
 aside,
 footer {
-    background-color: #a1a1a1;
+    background-color: #f9f9f9;
     display: flex;
     margin: 3px;
 
@@ -120,7 +120,22 @@ footer section ul li a:hover {
 
 
 /* Estilos para o formulário de assinatura da newsletter dentro do article */
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 45px 0;
+    border: 1px solid;
+    border-radius: 50px;
+    background: linear-gradient(#fffafa, #ff8685, #9b9b9b);
+}
+
 article form {
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
