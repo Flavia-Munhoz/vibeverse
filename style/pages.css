@@ -67,7 +67,6 @@ main {
 main section {
     width: 100%;
     margin: 10px;
-    background: linear-gradient(#9a9a9a, #5a5a5a, #1a1a1a);
 }
 
 aside {
@@ -129,7 +128,6 @@ article{
     padding: 45px 0;
     border: 1px solid;
     border-radius: 50px;
-    background: linear-gradient(#fffafa, #ff8685, #9b9b9b);
 }
 
 article form {
