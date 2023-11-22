@@ -1,7 +1,42 @@
-body,
-html {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     height: 100%;
-    font-family: 'Glass Antiqua', sans-serif;
+    font-family: 'Commissioner', sans-serif;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/fonts/Commissioner-Regular.ttf') format('truetype');
+    /* Altere o formato e o caminho conforme necessário */
+    /* Outras propriedades opcionais: font-weight, font-style, etc. */
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/fonts/Commissioner-Regular.ttf') format('truetype');
+    /* Altere o formato e o caminho conforme necessário */
+    /* Outras propriedades opcionais: font-weight, font-style, etc. */
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/fonts/Commissioner-Medium.ttf') format('truetype');
+    /* Altere o formato e o caminho conforme necessário */
+    /* Outras propriedades opcionais: font-weight, font-style, etc. */
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/fonts/Commissioner-Bold.ttf') format('truetype');
+    /* Altere o formato e o caminho conforme necessário */
+    /* Outras propriedades opcionais: font-weight, font-style, etc. */
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/fonts/Commissioner-Regular.ttf') format('truetype');
+    /* Altere o formato e o caminho conforme necessário */
+    /* Outras propriedades opcionais: font-weight, font-style, etc. */
 }
