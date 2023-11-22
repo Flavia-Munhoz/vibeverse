@@ -32,52 +32,63 @@
     <h1>Principal</h1>
     <section></section>
   </main>
+  <article>
+    <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
+    <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
+
+    <form action="/submit_newsletter" method="post">
+      <div>
+        <label for="aceitar_emails">
+          <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
+          Aceito receber e-mails promocionais
+        </label>
+      </div>
+
+      <div>
+        <label for="termos_uso">
+          <input type="checkbox" id="termos_uso" name="termos_uso" required>
+          Concordo com os termos de uso
+        </label>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+      </div>
+
+      <div>
+        <label for="alertas_sms">
+          <input type="checkbox" id="alertas_sms" name="alertas_sms">
+          Gostaria de receber alertas por SMS
+        </label>
+      </div>
+
+      <div>
+        <label for="whatsapp">
+          <input type="checkbox" id="whatsapp" name="whatsapp">
+          Gostaria de receber alertas por WhatsApp
+        </label>
+      </div>
+
+      <input type="submit" value="Assinar">
+    </form>
+  </article>
   <footer>
     <section>
-      <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
-      <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
-
-      <form action="/submit_newsletter" method="post">
-        <div>
-          <label for="aceitar_emails">
-            <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
-            Aceito receber e-mails promocionais
-          </label>
-        </div>
-
-        <div>
-          <label for="termos_uso">
-            <input type="checkbox" id="termos_uso" name="termos_uso" required>
-            Concordo com os termos de uso
-          </label>
-        </div>
-
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div>
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone">
-        </div>
-
-        <div>
-          <label for="alertas_sms">
-            <input type="checkbox" id="alertas_sms" name="alertas_sms">
-            Gostaria de receber alertas por SMS
-          </label>
-        </div>
-
-        <div>
-          <label for="whatsapp">
-            <input type="checkbox" id="whatsapp" name="whatsapp">
-            Gostaria de receber alertas por WhatsApp
-          </label>
-        </div>
-
-        <input type="submit" value="Assinar">
-      </form>
+      <p>Copyright ©
+        <span itemprop="copyrightYear">2010</span>
+        <span itemprop="copyrightHolder">The Example Company</span>
+      </p>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="policy.html">Privacy Policy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </section>
   </footer>
 

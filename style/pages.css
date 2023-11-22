@@ -86,6 +86,80 @@ a {
     color: inherit;
 }
 
+/* Estilos para a seção do footer */
+footer section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+}
+
+footer section p {
+    margin-bottom: 10px;
+}
+
+footer section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer section ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer section ul li a:hover {
+    color: #007bff;
+}
+
+
+/* Estilos para o formulário de assinatura da newsletter dentro do article */
+article form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+article form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+article form input[type="email"],
+article form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+article form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+article form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
 @media only screen and (max-width: 923px) {
     header {
         order: 0;
