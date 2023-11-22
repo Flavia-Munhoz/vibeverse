@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/pages.css">
+    <title>HOME PAGE</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="#" id="logo">LOGO</a>
+        <button id="openMenu">&#9776;</button>
+        <nav id="menu">
+            <button id="closeMenu">x</button>
+            <a href="#">Inicio</a>
+            <a href="#">Produto</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <aside>Relacionamento</aside>
+    <main>
+        <h1>Principal</h1>
+        <section></section>
+    </main>
+    <footer>Rodapé</footer>
+
+    <script type="text/javascript">
+
+        openMenu.addEventListener('click', () => {
+            menu.style.display = 'flex'
+
+            menu.style.rigth = (menu.offsetwidth * - 1) + 'px'
+            openMenu.style.display = 'none'
+
+            setTimeout(() => {
+                menu.style.opacity = '1'
+
+                menu.style.rigth = '0'
+
+            }, 10)
+
+        })
+        closeMenu.addEventListener('clic', () => {
+            menu.style.opacity = '0'
+            menu.style.rigth = (menu.offsetwidth * -1) + 'px'
+
+            setTimeout(() => {
+                menu.removeAttibute('style')
+                openMenu.removeAttibute('style')
+            }, 200)
+        })
+    </script>
+</body>
+
+</html>
