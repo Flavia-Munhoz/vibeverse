@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
-
-    <title>Formulário de Login</title>
+    <title>VibeVerse | Login</title>
     <link rel="stylesheet" href="./style/login.css">
 </head>
 
@@ -16,21 +15,33 @@
         <section class="container">
             <form class="login-form" action="/login" method="post">
                 <img src="../img/logov&v.png" alt="">
-                <fieldset>
+                <div>
                     <legend>Entre</legend>
 
                     <label for="username">Nome</label>
                     <input type="text" id="username" name="username" required>
 
-                    <label for="password">Senha</label>
+                    <label for="password" >Senha</label>
                     <input type="password" id="password" name="password" required>
 
-                </fieldset>
+                </div>
                 <button type="submit">Entrar</button>
                 <a href="./cadastre-se.html">Cadastre-se</a>
             </form>
         </section>
     </main>
+    <footer>
+        <section>
+            <p>&copy; <span itemprop="copyrightYear">2023</span>
+                <span itemprop="copyrightHolder">The Example Company</span>
+            </p>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="policy.html">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 
 </html>

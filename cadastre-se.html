@@ -12,99 +12,77 @@
 
 <body>
     <header>
+        <img src="" alt="Imagem de logo Vibe Verse">
         <a href="#">Login</a>
-        <a href="#">Quem somos</a>
     </header>
     <main>
-        <h1>Cadastro - VibeVerse</h1>
-        <section>
-            <form action="/index.html" method="post">
+        <form id="submitForm" class="sp__form" novalidate>
+            <div class="sp__form__wrapper">
+                <input type="text" id="name" class="sp__form__input" maxlength="50" name="name" placeholder="Nome" />
+            </div>
 
-                <section>
-                    <h2>Informações Pessoais</h2>
+            <div class="sp__form__wrapper">
+                <input type="tel" id="phone" class="sp__form__input" name="Telefone" placeholder="Telefone" />
+            </div>
 
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
+            <div class="sp__form__wrapper">
+                <input type="email" id="email" class="sp__form__input sp__form__input--email" maxlength="100"
+                    name="email" placeholder="E-mail" />
+            </div>
+            <div class="sp__form__wrapper">
+                <select id="estiloVida" name="estiloVida" required>
+                    <option selected disabled value="">Estilo de Vida</option>
+                    <option value="ativo">Ativo</option>
+                    <option value="relaxado">Relaxado</option>
+                    <option value="alternativo">Alternativo</option>
+                    <option value="tradicional">Tradicional</option>
+                    <option value="moderno">Moderno</option>
+                </select>
+            </div>
+            <div class="sp__form__wrapper">
+                <select id="estiloMusical" name="estiloMusical" required>
+                    <option selected disabled value="">Estilo Musical</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="eletronica">Eletrônica</option>
+                    <option value="hipHop">Hip Hop</option>
+                    <option value="indie">Indie</option>
+                </select>
+            </div>
+            <div class="sp__form__wrapper">
+                <select id="prefSeriesVideos" name="prefSeriesVideos" required>
+                    <option selected disabled value="">Estilo de séries e filmes</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="acao">Ação</option>
+                    <option value="drama">Drama</option>
+                    <option value="ficcaoCientifica">Ficção Científica</option>
+                    <option value="documentario">Documentário</option>
+                </select>
+            </div>
 
-                    <div>
-                        <label for="apelido">Como Gosta de Ser Chamado:</label>
-                        <input type="text" id="apelido" name="apelido" required>
-                    </div>
+            <input type="hidden" id="categoria" name="category" value="359697">
+            <input type="hidden" id="action" name="action" value="new">
+            <input type="hidden" id="src" name="src" value="ad">
 
-                    <div>
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" id="endereco" name="endereco" required>
-                    </div>
+            <button type="submit" id="submit" class="sp__form__button">Enviar</button>
 
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Redes Sociais</h2>
-
-                    <div>
-                        <input type="checkbox" id="whatsapp" name="whatsapp">
-                        <label for="whatsapp">WhatsApp</label>
-                        <input type="text" id="link_whatsapp" name="link_whatsapp">
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="instagram" name="instagram">
-                        <label for="instagram">Instagram</label>
-                        <input type="text" id="link_instagram" name="link_instagram">
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="twitter" name="twitter">
-                        <label for="twitter">Twitter</label>
-                        <input type="text" id="link_twitter" name="link_twitter">
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Preferências</h2>
-
-                    <div>
-                        <label for="interesses">Interesses Musicais:</label>
-                        <select id="interesses" name="interesses" multiple>
-                            <optgroup label="Estilos Musicais">
-                                <option value="rock">Rock</option>
-                                <option value="reggae">Reggae</option>
-                                <option value="black-musical">Black Musical</option>
-                                <option value="pagode">Pagode</option>
-                                <option value="samba">Samba</option>
-                                <option value="folk">Folk</option>
-                            </optgroup>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="filme_preferido">Estilo de Filme Preferido:</label>
-                        <select id="filme_preferido" name="filme_preferido" multiple>
-                            <optgroup label="Gêneros de Filme">
-                                <option value="terror">Terror</option>
-                                <option value="comedia">Comédia</option>
-                                <option value="suspense">Suspense</option>
-                                <option value="aventura">Aventura</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                </section>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-        </section>
+            <span class="success-msg" id="success-msg">Sua mensagem foi enviada com sucesso. Entraremos em contato em
+                breve!</span>
+            <span class="error-msg" id="error-msg">Ops! Algo deu errado, por favor, tente mais tarde!</span>
+        </form>
     </main>
-    <footer>Rodapé</footer>
-
-
+    <footer>
+        <section>
+            <p>&copy; <span itemprop="copyrightYear">2023</span>
+                <span itemprop="copyrightHolder">The Example Company</span>
+            </p>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="policy.html">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 
 </html>

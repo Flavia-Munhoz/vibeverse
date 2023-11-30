@@ -10,51 +10,52 @@
 </head>
 
 <body>
+
     <header>
         <a href="#" id="logo">LOGO</a>
-        <button id="openMenu">&#9776;</button>
         <nav id="menu">
-            <button id="closeMenu">x</button>
-            <a href="#">Inicio</a>
-            <a href="#">Produto</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+            <a href="./filmes.html">Filmes</a>
+            <a href="./series.html">Séries</a>
+            <a href="./shows.html">Shows</a>
+            <a href="./rock.html">Rock</a>
+            <a href="./hiphop.html">HipHop</a>
+            <a href="galeria.html">Galeria</a>
         </nav>
     </header>
 
     <aside>Relacionamento</aside>
-    <main>
+    <main class="vibeverse-main">
         <h1>Principal</h1>
-        <section></section>
+        <section>
+            <div class="slides">
+                <div class="slide first">
+                    <!-- Conteúdo do primeiro slide -->
+                    <img src="./img/tudoemtodolugar.jpg" alt="Slide 1" />
+                </div>
+                <div class="slide">
+                    <!-- Conteúdo do segundo slide -->
+                    <img src="./img/areta-login.png" alt="Slide 2" />
+                </div>
+                <div class="slide">
+                    <!-- Conteúdo do terceiro slide -->
+                    <img src="./img/naoolhe.jpg" alt="Slide 3" />
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>Rodapé</footer>
+    <footer>
+        <section>
+            <p>&copy; <span itemprop="copyrightYear">2023</span>
+                <span itemprop="copyrightHolder">The Example Company</span>
+            </p>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="policy.html">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>
+    </footer>
 
-    <script type="text/javascript">
-
-        openMenu.addEventListener('click', () => {
-            menu.style.display = 'flex'
-
-            menu.style.rigth = (menu.offsetwidth * - 1) + 'px'
-            openMenu.style.display = 'none'
-
-            setTimeout(() => {
-                menu.style.opacity = '1'
-
-                menu.style.rigth = '0'
-
-            }, 10)
-
-        })
-        closeMenu.addEventListener('clic', () => {
-            menu.style.opacity = '0'
-            menu.style.rigth = (menu.offsetwidth * -1) + 'px'
-
-            setTimeout(() => {
-                menu.removeAttibute('style')
-                openMenu.removeAttibute('style')
-            }, 200)
-        })
-    </script>
 </body>
 
 </html>

@@ -1,105 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-body {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3px;
-    flex: 1 1 100vw;
-}
+@import url('/style/main.css');
 
 header,
 nav,
 main,
 aside,
 footer {
-    background-color: #f9f9f9;
-    display: flex;
-    margin: 3px;
-
+    background-color: #fafafa;
+    margin: 0 auto;
 }
 
 header {
-    flex: 1 1 100vw;
-
+    background: url('/img/login.jpg');
+    background: #000;
 }
 
 header #logo {
-    flex: 0 1 200px;
     background: #c9c9c9;
-}
-
-#openMenu,
-#closeMenu {
-    border: none;
-    background: none;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0% 5px 0px 5px;
-    cursor: pointer;
-    display: none;
+    width: 200px;
+    float: left;
 }
 
 nav {
-    flex: 1 1 100vw;
-    align-items: center;
-    justify-content: flex-end;
-
+    float: right;
+    margin-top: 30px;
 }
 
 nav a {
-    margin: 3%;
+    margin: 0 20px;
     font-size: 20pt;
+    display: inline-block;
 }
 
 main {
-    flex: 20 1 500px;
-    height: calc(100vh - 224px);
-    flex-wrap: wrap;
-    overflow: auto;
-
+    float: left;
+    margin: 50px auto;
+    width: fit-content;
+    height: fit-content;
 }
 
-main section {
+/* main section {
     width: 100%;
     margin: 10px;
-}
+} */
 
 aside {
-    flex: 1 1 200px;
-
-
+    float: right;
+    width: 200px;
 }
 
 footer {
-    flex: 1 1 100vw;
+    clear: both;
+    height: 200px;
+    width: 35px;
 
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /* Estilos para a seção do footer */
+
 footer section {
     padding: 20px;
     background-color: #f5f5f5;
     border-top: 1px solid #ccc;
-}
-
-footer section p {
-    margin-bottom: 10px;
-}
-
-footer section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 footer section ul li {
@@ -117,113 +78,157 @@ footer section ul li a:hover {
     color: #007bff;
 }
 
+/* Media queries simplificados para ajustes de layout responsivo */
 
-/* Estilos para o formulário de assinatura da newsletter dentro do article */
-article {
-    flex: 100vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    gap: 20px;
-    border: 1px solid;
-    border-radius: 5px;
-}
+@media only screen and (max-width: 717px) {
 
-article form {
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-article form label {
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-article form input[type="email"],
-article form input[type="tel"] {
-    width: 234px;
-    padding: 12px;
-    margin-bottom: 12px;
-    border: 1px solid #06b306;
-    border-radius: 50px;
-    background-color: #000000;
-    color: #fff;
-}
-
-article form input[type="submit"] {
-    width: 20%;
-    height: 52px;
-    padding: 10px;
-    border: 1px solid #06b306;
-    border-radius: 50px;
-    background-color: #000000;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-article form input[type="submit"]:hover {
-    background-color: #06b306;
-    border: 2px solid #000;
-}
-
-
-@media only screen and (max-width: 923px) {
-    header {
-        order: 0;
-    }
-
-    main {
-        order: 1;
-    }
-
-    aside {
-        flex: 1 1 100vw;
-        order: 2;
-    }
-
-    footer {
-        order: 3;
-    }
-
-    @media only screen and (max-width: 717px) {
-
-        #openMenu,
-        #closeMenu {
-            display: block;
-        }
-
-        #openMenu {
-            margin-left: auto;
-        }
-
-        #closeMenu {
-            position: fixed;
-            right: 15px;
-            top: 15 px;
-
-        }
+    #openMenu,
+    #closeMenu {
+        display: block;
     }
 
     nav {
-        position: fixed;
-        flex-direction: column;
-        width: 100vw;
-        background: rgba(255, 255, 255, 0, 8);
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        display: none;
-        opacity: 0;
-        transition: 0, 3s;
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* Estilos para o layout geral */
+
+body {
+    margin: 3px;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    background-color: #f9f9f9;
+    margin: 3px;
+}
+
+header {
+    background: #c9c9c9;
+}
+
+header #logo {
+    background: #c9c9c9;
+    width: 200px;
+    float: left;
+}
+
+#openMenu,
+#closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0% 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    float: right;
+    margin-top: 30px;
+}
+
+nav a {
+    margin: 0 20px;
+    font-size: 20pt;
+    display: inline-block;
+}
+
+main {
+    float: left;
+    margin: 50px auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+main section {
+    width: 100%;
+    margin: 10px;
+}
+
+aside {
+    float: right;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    clear: both;
+}
+
+/* Estilos para a seção do footer */
+
+footer section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+}
+
+footer section ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer section ul li a:hover {
+    color: #007bff;
+}
+
+/* Media queries simplificados para ajustes de layout responsivo */
+
+@media only screen and (max-width: 717px) {
+
+    #openMenu,
+    #closeMenu {
+        display: block;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    aside {
+
+        float: right;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer {
+        text-align: center;
     }
 }
