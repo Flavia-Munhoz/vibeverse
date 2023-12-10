@@ -2,40 +2,121 @@
 <html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="../style/forms/form-main.css">
-    <link rel="stylesheet" href="/style/pages.css">
-    <title>Layout</title>
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
 
+        nav {
+            background-color: #333;
+            height: 50px;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #555;
+        }
+
+        .galeria {
+            margin: 20px;
+        }
+
+        .galeria img {
+            width: 23%;
+            /* Ajuste a largura conforme necessário */
+            height: auto;
+            margin: 0 1% 2% 0;
+            /* Adicionei uma margem inferior de 2% */
+            display: inline-block;
+            /* Alterado para inline-block */
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
-        <a href="#" id="logo">LOGO</a>
-        <nav id="menu">
-            <a href="./filmes.html">Filmes</a>
-            <a href="./series.html">Séries</a>
-            <a href="./shows.html">Shows</a>
-            <a href="./rock.html">Rock</a>
-            <a href="./hiphop.html">HipHop</a>
-            <a href="galeria.html">Galeria</a>
-        </nav>
-    </header>
-    <main>Principal</main>
-    <footer>
-        <section>
-            <p>&copy; <span itemprop="copyrightYear">2023</span>
-                <span itemprop="copyrightHolder">The Example Company</span>
-            </p>
+        <h1>VibeVerse Memórias: Shows que Fizeram História</h1>
+
+        <nav> <!-- Area do menu de navegação -->
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="policy.html">Privacy Policy</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li> <a href="#">Filmes</a> </li>
+                <li> <a href="#">Series</a> </li>
+                <li> <a href="#">Shows</a> </li>
+                <li> <a href="#">Rock</a> </li>
+                <li> <a href="#">HipHop</a> </li>
+                <li> <a href="#">Galeria</a> </li>
             </ul>
-        </section>
-    </footer>
+        </nav>
+
+    </header>
+
+    <div class="galeria clearfix">
+        <img src="img/paulpoa.jpg" alt="Imagem 1">
+        <img src="img/cold.jpg" alt="Imagem 2">
+        <img src="img/madonapoa.jpg" alt="Imagem 3">
+        <img src="img/red.jpg" alt="Imagem 4">
+        <!-- Adicione mais imagens conforme necessário -->
+        <img src="img/gaga.jpg" alt="Imagem 5">
+        <img src="img/maiden.jpg" alt="Imagem 6">
+        <img src="img/sandy.jpg" alt="Imagem 7">
+        <img src="img/stones.jpg" alt="Imagem 8">
+        <!-- Adicione mais imagens conforme necessário -->
+        <img src="img/armando.jpg" alt="Imagem 9">
+        <img src="img/ed.jpg" alt="Imagem 10">
+        <img src="img/Maroon10.jpeg" alt="Imagem 11">
+        <img src="img/foo.jpg" alt="Imagem 12">
+        <!-- Adicione mais imagens conforme necessário -->
+        <img src="img/steven.jpg" alt="Imagem 13">
+        <img src="img/alok.jpg" alt="Imagem 14">
+        <img src="img/jota.jpg" alt="Imagem 15">
+        <img src="img/queen.jpg" alt="Imagem 16">
+        <!-- Adicione mais imagens conforme necessário -->
+        <img src="img/adele.jpg" alt="Imagem 17">
+        <img src="img/black.jpg" alt="Imagem 18">
+        <img src="img/capital.jpg" alt="Imagem 19">
+        <img src="img/roberto.jpg" alt="Imagem 20">
+
+    </div>
 
 </body>
 

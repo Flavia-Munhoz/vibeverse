@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Verdana, Sans-serif;
+    font-size: 16px;
+}
+
+#container {
+
+
+    min-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: #9f53a2;
+    height: 110px;
+    text-align: center;
+
+}
+
+header h1 {
+
+    color: #fff;
+    background-color: #abade3;
+    padding: 10px 0;
+}
+
+nav {
+    height: 50px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #333;
+    padding: 8px 10px;
+    font-weight: bold;
+    transition: backgroud-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #199;
+}
+
+#destaque {
+    height: 250px;
+    background-color: #abade3;
+    ;
+    width: 100%;
+
+}
+
+#destaque figure {
+    height: 200px;
+    width: 35%;
+    float: left;
+    background-color: #573258;
+    margin: 25px 20px;
+
+}
+
+#destaque p {
+    width: 58%;
+    float: left;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+#destaque figure img {
+    width: 100%;
+
+}
+
+main {
+    height: 500px;
+    background-color: orange;
+
+}
+
+#informacoes {
+    width: 68%;
+    background-color: #d4d4d4;
+    height: 100%;
+    float: left;
+
+
+}
+
+#informacoes .noticia {
+    background-color: coral;
+    width: 95%;
+    height: 45%;
+    margin: 15px auto;
+
+}
+
+aside {
+    width: 30%;
+    background-color: darkmagenta;
+    float: right;
+    height: 100%;
+}
+
+aside div {
+    width: 90%;
+    height: 25%;
+    background-color: lightblue;
+    text-align: center;
+    margin: 30px auto;
+}
