@@ -11,18 +11,50 @@
 
 <body>
     <header>
-        <a href="#" id="logo">LOGO</a>
-        <button id="openMenu">&#9776;</button>
+        <a href="./index.html" id="logo"><img src="./img/logov&v.png" alt="logo-vibe-verse"></a>
         <nav id="menu">
-            <button id="closeMenu">x</button>
-            <a href="#">Inicio</a>
-            <a href="#">Produto</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+            <a href="./index.html">Home</a>
+            <a href="./filmes.html">Filmes</a>
+            <a href="./shows.html">Shows</a>
+            <a href="./rock.html">Rock</a>
+            <a href="./hiphop.html">HipHop</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="./series.html">Séries</a>
         </nav>
     </header>
+    <aside>
+        <div>
+            <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
+            <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
 
-    <aside>Relacionamento</aside>
+            <form action="#" method="post">
+                <div>
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                    <input type="email" id="email" name="email" required placeholder="E-mail">
+                    <input type="phone" id="telefone" name="telefone" placeholder="Telefone">
+                </div>
+
+                <div>
+                    <label for="acept_emails">
+
+                        <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
+                        Aceito receber e-mails promocionais
+                    </label>
+
+                    <label for="alert_sms">
+                        <input type="checkbox" id="alertas_sms" name="alertas_sms">
+                        Gostaria de receber alertas por SMS
+                    </label>
+
+                    <label for="whatsapp">
+                        <input type="checkbox" id="whatsapp" name="whatsapp">
+                        Gostaria de receber alertas por WhatsApp
+                    </label>
+                </div>
+                <input type="submit" value="Assinar" formaction="./login.html">
+            </form>
+        </div>
+    </aside>
     <main>
         <h1>Rock'n'Roll, baby</h1>
         <section>

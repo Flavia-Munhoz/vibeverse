@@ -1,180 +1,196 @@
-.sp__form {
-    .error-message {
-        display: none;
-        color: #df1818;
-        font-size: 13px;
-        margin: 6px 2px;
+@import url('/style/main.css');
+
+header {
+    background: url('/img/login.jpg');
+    height: 100px;
+}
+
+header #logo {
+    width: 200px;
+    float: left;
+}
+
+a {
+    img {
+        position: absolute;
+        background-color: #ffb009;
+        top: -60px;
+        width: 160px;
+        border-radius: 80px;
+    }
+}
+
+
+nav {
+    float: right;
+    margin-top: 30px;
+}
+
+
+
+nav a {
+    padding: 14px;
+    font-weight: 700;
+    margin: 0 30px;
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: black;
+    color: orange;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: 658px;
+
+    h1 {
+        position: absolute;
+        font-size: 12px;
+        width: 50px;
+        height: 50px;
+        border-radius: 34px;
+        color: orange;
+        left: 30px;
     }
 
-    &__group {
+    #manifesto {
+
+        div {
+            font-family: Unitext, sans-serif;
+            font-weight: 300;
+            text-align: left;
+            font-size: 18px;
+            color: #707070;
+            line-height: 1.8;
+        }
+
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+    }
+
+    .assuntos {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-
-        &--align-start {
-            align-items: flex-start;
-        }
-
-        @media screen and (min-width: 768px) {
-            gap: 20px;
-            flex-wrap: nowrap;
-        }
-    }
-
-    &__wrapper {
-        width: 100%;
-        margin: 10px 0 30px 0;
-    }
-
-    &__input {
-        border: 1px solid#000;
-        width: 100%;
-        padding: 14px 24px;
-        font-size: 14px;
-        border-radius: 25px;
-        max-width: 100%;
-        font-family: inherit;
-
-        &--email {
-            background-image: url(/img/email.svg);
-            background-repeat: no-repeat;
-            background-position: 98% center;
-            background-size: 18px;
-            padding-left: 15px;
-        }
-
-        &.error {
-            border-color: #df1818;
-            color: #df1818;
-
-            &::placeholder {
-                color: #df1818;
-            }
-        }
-
-        &.error~.error-message {
-            display: block;
-        }
-
-        &::placeholder {
-            color: #000;
-        }
-    }
-
-    &__select-box {
-        position: relative;
-
-        >select {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background: #fff;
-
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            width: 18px;
-            height: 12px;
-            position: absolute;
-            right: 12px;
-            top: 20px;
-            background-image: url(/img/arrow.svg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            pointer-events: none;
-        }
-    }
-
-    & select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: transparent;
-        width: 100%;
-        border: 1px solid black;
-        width: 100%;
-        padding: 14px 24px;
-        font-size: 14px;
-        border-radius: 25px;
-        max-width: 100%;
-        font-family: inherit;
-        background-image: url('../img/arrow-down.svg');
-        background-repeat: no-repeat;
-        background-position: 98% center;
-        background-size: 18px;
-        padding-left: 15px;
-        background-color: #fff;
+        flex-direction: row;
+        gap: 50px;
 
 
-        &.error {
-            border-color: #df1818;
-            color: #df1818;
-        }
-
-        >option {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background-color: #fff;
+        img {
+            width: 25%;
+            border-radius: 25px;
 
         }
     }
 
-    &__radio {
-        position: relative;
+    form {
+        gap: 30px;
         display: flex;
-        align-items: center;
-        cursor: pointer;
+        flex-direction: column;
+
+        input,
+        textarea {
+            border: 1px solid #000000;
+            width: 60%;
+            padding: 14px 24px;
+            font-size: 14px;
+            border-radius: 25px;
+            max-width: 100%;
+            font-family: inherit;
+        }
+
+    }
+}
+
+
+main section {
+    width: 100%;
+    margin: 40px auto;
+}
+
+aside {
+    width: 100%;
+    position: absolute;
+    bottom: 124px;
+    text-align: center;
+    background-color: #000;
+
+
+    div {
+        padding: 8px;
+        color: #ffffff;
+        background-color: #0040;
+
+        #aceitar_emails,
+        #alertas_sms,
+        #whatsapp {
+            width: 15px;
+        }
 
         input {
-            position: absolute;
-            opacity: 0;
-
-            &:checked~.checkmark:after {
-                display: block;
-            }
+            margin: 0px 10px;
+            width: 224px;
+            padding: 8px;
+            border: 2px solid #000;
+            border-radius: 30px;
+            background-color: #4ddb4d;
+            color: #ffffff;
+            font-weight: bold;
         }
 
-        .checkmark {
-            position: relative;
-            height: 22px;
-            width: 22px;
-            background-color: #fff;
-            border: 1px solid#000;
-            border-radius: 50%;
-            margin-right: 12px;
-
-            &::after {
-                content: "";
-                position: absolute;
-                display: none;
-                top: 2px;
-                left: 2px;
-                width: 16px;
-                height: 16px;
-                border-radius: 50%;
-                background: #000;
-            }
-        }
     }
+}
 
-    &__button {
-        width: 100%;
-        padding: 14px 24px;
-        color: #fff;
-        background: #000;
-        border-radius: 25px;
-        font-size: 16px;
-        border: none;
+footer section {
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    text-align: center;
 
-        &:hover {
-            cursor: pointer
-        }
-
-        &:disabled {
-            cursor: not-allowed;
-        }
+    ul {
+        margin: 20px 0px;
+        border: 1px solid black;
     }
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: url("/img/areta-login.png");
+}
+
+/* Estilos para a seção do footer */
+
+footer section {
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    background: url("/img/areta-login.png");
+    height: 100%;
+    color: white;
+    font-weight: 900;
+
+}
+
+footer section ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer section ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+    font-size: 20px;
+
+}
+
+footer section ul li a:hover {
+    color: #007bff;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/pages.css">
+    <link rel="stylesheet" href="./style/form.css">
     <title>Festival</title>
 
 </head>
@@ -57,29 +57,36 @@
     </aside>
     <main>
         <section>
-            
-                <h2></h2>
-                <img src="" alt="">
+            <p>
+                Bem-vindo ao VIBEvERSE, onde exploramos o universo da música, filmes e cultura. Nosso objetivo é
+                oferecer uma plataforma para entusiastas e criadores compartilharem suas paixões e descobertas.
+            </p>
+            <p>
+                Estamos sempre ansiosos para ouvir seus comentários, sugestões e dúvidas. Preencha o formulário abaixo e
+                entre em contato conosco. Sua opinião é fundamental para nós!
+            </p>
 
-            
+            <!-- Formulário de Contato -->
+            <form action="/enviar-contato" method="post">
+
+                <input type="text" id="nome" name="nome" required placeholder="Nome">
+
+
+
+                <input type="email" id="email" name="email" required placeholder="Email" placeholder="Email">
+
+
+
+                <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Mensagem"></textarea>
+
+
+                <input type="submit" value="Enviar">
+            </form>
         </section>
-        <section>
-            <div>
-                <h2></h2>
-                <img src="" alt="">
-
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2></h2>
-                <img src="" alt="">
-
-            </div>
         </section>
     </main>
     <footer>
-        <section>
+        <section id="form">
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="policy.html">Privacy Policy</a></li>
