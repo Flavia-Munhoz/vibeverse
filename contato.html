@@ -9,19 +9,38 @@
 
 </head>
 
-<body>
-    <header>
-        <a href="./index.html" id="logo"><img src="./img/logov&v.png" alt="logo-vibe-verse"></a>
-        <nav id="menu">
-            <a href="./index.html">Home</a>
-            <a href="./filmes.html">Filmes</a>
-            <a href="./shows.html">Shows</a>
-            <a href="./rock.html">Rock</a>
-            <a href="./hiphop.html">HipHop</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="./series.html">Séries</a>
-        </nav>
-    </header>
+<body>    <header>
+    <a href="./index.html" id="logo"><img src="./img/logov&v.png" alt="logo-vibe-verse"></a>
+    <nav id="menu">
+        <a href="/index.html">Home</a>
+        <a href="/filmes.html">Filmes</a>
+        <a href="/series.html">Séries</a>
+        <a href="/shows.html">Shows</a>
+        <a href="/rock.html">Rock</a>
+        <a href="/hiphop.html">HipHop</a>
+        <a href="/origens.html">Origens</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="/login.html">Login</a>
+    </nav>
+</header>
+    <main>
+        <h1>Fale com VibeVerse</h1>
+        <section>
+            <p>
+                Bem-vindo ao VIBEvERSE, onde exploramos o universo da música, filmes e cultura. Nosso objetivo é
+                oferecer uma plataforma para entusiastas e criadores compartilharem suas paixões e descobertas.
+                Estamos sempre ansiosos para ouvir seus comentários, sugestões e dúvidas. Preencha o formulário abaixo e
+                entre em contato conosco. Sua opinião é fundamental para nós!
+            </p>
+            <form action="/index.html" method="post">
+                <input type="text" id="nome" name="nome" required placeholder="Nome">
+                <input type="email" id="email" name="email" required placeholder="Email" placeholder="Email">
+                <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Mensagem"></textarea>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </section>
+        </section>
+    </main>
     <aside>
         <div>
             <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
@@ -51,49 +70,17 @@
                         Gostaria de receber alertas por WhatsApp
                     </label>
                 </div>
-                <input type="submit" value="Assinar" formaction="./login.html">
+                <input type="submit" value="Assinar" ">
             </form>
         </div>
     </aside>
-    <main>
-        <section>
-            <p>
-                Bem-vindo ao VIBEvERSE, onde exploramos o universo da música, filmes e cultura. Nosso objetivo é
-                oferecer uma plataforma para entusiastas e criadores compartilharem suas paixões e descobertas.
-            </p>
-            <p>
-                Estamos sempre ansiosos para ouvir seus comentários, sugestões e dúvidas. Preencha o formulário abaixo e
-                entre em contato conosco. Sua opinião é fundamental para nós!
-            </p>
-
-            <!-- Formulário de Contato -->
-            <form action="/enviar-contato" method="post">
-
-                <input type="text" id="nome" name="nome" required placeholder="Nome">
-
-
-
-                <input type="email" id="email" name="email" required placeholder="Email" placeholder="Email">
-
-
-
-                <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Mensagem"></textarea>
-
-
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-        </section>
-    </main>
     <footer>
         <section id="form">
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="policy.html">Privacy Policy</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="/contato.html">Fale com VibeVerse</a></li>
             </ul>
             <p>&copy; <span itemprop="copyrightYear">2023</span>
-                <span itemprop="copyrightHolder">The Example Company</span>
+                <span itemprop="copyrightHolder"></span>
             </p>
         </section>
     </footer>

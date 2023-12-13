@@ -4,89 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/galeria.css">
     <title>Galeria de Fotos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-
-        nav {
-            background-color: #333;
-            height: 50px;
-        }
-
-        nav ul {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-        }
-
-        nav ul li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #555;
-        }
-
-        .galeria {
-            margin: 20px;
-        }
-
-        .galeria img {
-            width: 23%;
-            /* Ajuste a largura conforme necessário */
-            height: auto;
-            margin: 0 1% 2% 0;
-            /* Adicionei uma margem inferior de 2% */
-            display: inline-block;
-            /* Alterado para inline-block */
-            transition: transform 0.3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .galeria img:hover {
-            transform: scale(1.1);
-        }
-
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <a href="./index.html" id="logo"><img src="./img/logov&v.png" alt="logo-vibe-verse"></a>
         <nav id="menu">
-            <a href="./index.html">Home</a>
-            <a href="./filmes.html">Filmes</a>
-            <a href="./shows.html">Shows</a>
-            <a href="./rock.html">Rock</a>
-            <a href="./hiphop.html">HipHop</a>
+            <a href="/index.html">Home</a>
+            <a href="/filmes.html">Filmes</a>
+            <a href="/series.html">Séries</a>
+            <a href="/shows.html">Shows</a>
+            <a href="/rock.html">Rock</a>
+            <a href="/hiphop.html">HipHop</a>
+            <a href="/origens.html">Origens</a>
             <a href="galeria.html">Galeria</a>
-            <a href="./series.html">Séries</a>
+            <a href="/login.html">Login</a>
         </nav>
     </header>
-
     <div class="galeria clearfix">
+        <h1>Galeria de Shows</h1>
         <img src="img/paulpoa.jpg" alt="Imagem 1">
         <img src="img/cold.jpg" alt="Imagem 2">
         <img src="img/madonapoa.jpg" alt="Imagem 3">
@@ -146,6 +84,16 @@
             </form>
         </div>
     </aside>
+    <footer>
+        <section id="form">
+            <ul>
+                <li><a href="/contato.html">Fale com VibeVerse</a></li>
+            </ul>
+            <p>&copy; <span itemprop="copyrightYear">2023</span>
+                <span itemprop="copyrightHolder"></span>
+            </p>
+        </section>
+    </footer>
 </body>
 
 </html>

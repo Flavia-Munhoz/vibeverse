@@ -1,0 +1,147 @@
+@import url('/style/main.css');
+
+header {
+    background: url('/img/login.jpg');
+    height: 100px;
+}
+
+header #logo {
+    width: 200px;
+    float: left;
+}
+
+h1 {
+    position: absolute;
+    font-size: 18px;
+    border-radius: 34px;
+    color: orange;
+    left: 30px;
+    top: 120px;
+}
+
+a {
+    img {
+        position: absolute;
+        background-color: #ffb009;
+        top: -60px;
+        width: 160px;
+        border-radius: 80px;
+    }
+}
+
+
+nav {
+    float: right;
+    margin-top: 30px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: -820px;
+    width: 100%;
+    background: url("/img/areta-login.png");
+}
+
+/* Estilos para a seção do footer */
+
+footer section {
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    background: url("/img/areta-login.png");
+    height: 100%;
+    color: white;
+    font-weight: 900;
+
+}
+
+footer section ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer section ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+    font-size: 20px;
+
+}
+
+footer section ul li a:hover {
+    color: #007bff;
+}
+
+nav a {
+    padding: 14px;
+    font-weight: 700;
+    margin: 0 15px;
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: black;
+    color: orange;
+    text-decoration: none;
+}
+
+.galeria {
+    margin: 20px;
+}
+
+.galeria img {
+    width: 23%;
+    /* Ajuste a largura conforme necessário */
+    height: auto;
+    margin: 0 1% 2% 0;
+    /* Adicionei uma margem inferior de 2% */
+    display: inline-block;
+    /* Alterado para inline-block */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+aside {
+    width: 100%;
+    position: absolute;
+    bottom: -740px;
+    text-align: center;
+    background-color: #000;
+
+    div {
+        padding: 8px;
+        color: #ffffff;
+        background-color: #0040;
+
+        #aceitar_emails,
+        #alertas_sms,
+        #whatsapp {
+            width: 15px;
+        }
+
+        input {
+            margin: 0px 10px;
+            width: 224px;
+            padding: 8px;
+            border: 2px solid #000;
+            border-radius: 30px;
+            background-color: #4ddb4d;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+    }
+}
