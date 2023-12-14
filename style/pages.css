@@ -297,3 +297,25 @@ aside {
     }
 }
 
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rating input:checked~label,
+.rating input:checked~label~input:checked~label {
+    color: #fdd835;
+}
+
+
