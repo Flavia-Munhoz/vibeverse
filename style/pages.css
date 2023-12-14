@@ -318,4 +318,19 @@ aside {
     color: #fdd835;
 }
 
+.user-review {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user-review img {
+    width: 50px; /* Ajuste o tamanho da imagem conforme desejado */
+    height: 50px;
+    border-radius: 50%; /* Para tornar a imagem redonda */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    object-fit: cover; /* Para garantir que a imagem mantenha suas proporções */
+}
+
+
 
