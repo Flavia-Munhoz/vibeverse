@@ -119,8 +119,7 @@ h1 {
 }
 
 .content {
-    position: relative;
-    left: 300px;
+
     background-color: #c6a3ff17;
 
     div {
@@ -155,9 +154,6 @@ h1 {
 .rock-section {
 
     background-color: #c6a3ff17;
-
-
-
 
     div {
         width: 60%;
