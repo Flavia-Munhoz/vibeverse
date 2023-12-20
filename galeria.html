@@ -56,21 +56,20 @@
             <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
             <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
 
-            <form action="#" method="post">
+            <form action="./login.html" method="post">
                 <div>
-                    <input type="text" id="nome" name="nome" placeholder="Nome">
-                    <input type="email" id="email" name="email" required placeholder="E-mail">
-                    <input type="phone" id="telefone" name="telefone" placeholder="Telefone">
+                    <input type="text" id="nome_newsletter" name="nome" placeholder="Nome">
+                    <input type="email" id="email_newsletter" name="email" required placeholder="E-mail">
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
                 </div>
 
                 <div>
-                    <label for="acept_emails">
-
+                    <label for="aceitar_emails">
                         <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
                         Aceito receber e-mails promocionais
                     </label>
 
-                    <label for="alert_sms">
+                    <label for="alertas_sms">
                         <input type="checkbox" id="alertas_sms" name="alertas_sms">
                         Gostaria de receber alertas por SMS
                     </label>
@@ -80,18 +79,17 @@
                         Gostaria de receber alertas por WhatsApp
                     </label>
                 </div>
-                <input type="submit" value="Assinar" formaction="./login.html">
+                <input type="submit" value="Assinar">
             </form>
         </div>
     </aside>
     <footer>
-        <section id="form">
-            <ul>
-                <li><a href="/contato.html">Fale com VibeVerse</a></li>
-            </ul>
+        <section>
+            <a href="/contato.html">Fale com VibeVerse</a>
             <p>&copy; <span itemprop="copyrightYear">2023</span>
                 <span itemprop="copyrightHolder"></span>
             </p>
+        </section>
         </section>
     </footer>
 </body>

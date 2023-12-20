@@ -1,5 +1,6 @@
 @import url('/style/main.css');
 
+
 header {
     background: url('/img/login.jpg');
     height: 100px;
@@ -42,7 +43,8 @@ nav a {
 }
 
 main {
-    padding: 80px;
+    min-height: calc(100vh - 100px);
+    padding: 160px;
 
     h1 {
         position: absolute;
@@ -53,13 +55,14 @@ main {
     }
 
     p {
+
         font-weight: 300;
         text-align: justify;
         font-size: 18px;
         color: #707070;
         line-height: 1.8;
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px 300px;
         width: 80%;
     }
 
@@ -67,7 +70,7 @@ main {
 
     form {
         position: absolute;
-        left: 448px;
+        left: 600px;
 
         input,
         textarea {
@@ -91,10 +94,9 @@ main {
         border-radius: 50px;
     }
 }
+
 aside {
     width: 100%;
-    position: absolute;
-    bottom: -400px;
     text-align: center;
     background-color: #000;
 
@@ -125,8 +127,6 @@ aside {
 }
 
 footer {
-    position: absolute;
-    bottom: -500px;
     width: 100%;
     background: url("/img/areta-login.png");
 }
@@ -160,4 +160,39 @@ footer section ul li a {
 
 footer section ul li a:hover {
     color: #007bff;
+}
+
+.icon-container {
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 600px;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.whatsapp-icon {
+    background-color: #25D366;
+    /* Cor do WhatsApp */
+}
+
+.chat-icon {
+    background-color: #0084FF;
+    /* Cor para ícone de chat */
 }

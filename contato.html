@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./style/form.css">
     <title>Fale com VibeVerse</title>
-
 </head>
 
-<body>  
+<body>
     <header>
-    <a href="./index.html" id="logo"><img src="./img/logov&v.png" alt="logo-vibe-verse"></a>
-    <nav id="menu">
-        <a href="/index.html">Home</a>
-        <a href="/filmes.html">Filmes</a>
-        <a href="/series.html">Séries</a>
-        <a href="/shows.html">Shows</a>
-        <a href="/rock.html">Rock</a>
-        <a href="/hiphop.html">HipHop</a>
-        <a href="/origens.html">Origens</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="/login.html">Login</a>
-    </nav>
-</header>
+        <a href="./index.html" id="logo"><img src="./img/logov&v.png" alt="logo-vibe-verse"></a>
+        <nav id="menu">
+            <a href="./index.html">Home</a>
+            <a href="./filmes.html">Filmes</a>
+            <a href="./series.html">Séries</a>
+            <a href="./shows.html">Shows</a>
+            <a href="./rock.html">Rock</a>
+            <a href="./hiphop.html">HipHop</a>
+            <a href="./origens.html">Origens</a>
+            <a href="./galeria.html">Galeria</a>
+            <a href="./login.html">Login</a>
+        </nav>
+    </header>
     <main>
         <h1>Fale com VibeVerse</h1>
         <section>
@@ -33,55 +33,58 @@
                 Estamos sempre ansiosos para ouvir seus comentários, sugestões e dúvidas. Preencha o formulário abaixo e
                 entre em contato conosco. Sua opinião é fundamental para nós!
             </p>
-                    <form action="/index.html" method="post">
-                        <input type="text" id="nome" name="nome" required placeholder="Nome">
-                     <input type="email" id="email" name="email" required placeholder="Email">
-                        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Mensagem"></textarea>
-                        <input class="btn" type="submit" value="Enviar">
-                    </form>
-                </section>
-            </main>
-            <aside>
-                <div>
-                    <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
-                    <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
-        
-                  <form action="#" method="post">
-            <div>
-                <input type="text" id="nome" name="nome" placeholder="Nome">
-                <input type="email" id="email" name="email" required placeholder="E-mail">
-                <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+            <div class="icon-container">
+                <a href="https://wa.me/+5551985712951" target="_blank" class="icon whatsapp-icon"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="/chat.html" class="icon chat-icon"><i class="fa-solid fa-comment-dots"></i></a>
             </div>
-        
-            <div>
-                <label for="aceitar_emails">
-                    <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
-                    Aceito receber e-mails promocionais
-                </label>
-        
-                <label for="alertas_sms">
-                    <input type="checkbox" id="alertas_sms" name="alertas_sms">
-                    Gostaria de receber alertas por SMS
-                </label>
-        
-                <label for="whatsapp">
-                    <input type="checkbox" id="whatsapp" name="whatsapp">
-                    Gostaria de receber alertas por WhatsApp
-                </label>
-            </div>
-            <input type="submit" value="Assinar">
-        </form>
+            <form action="/index.html" method="post">
+                <input type="text" id="nome_contato" name="nome" required placeholder="Nome">
+                <input type="email" id="email_contato" name="email" required placeholder="Email">
+                <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Mensagem"></textarea>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <aside>
+        <div>
+            <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
+            <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
 
+            <form action="./login.html" method="post">
+                <div>
+                    <input type="text" id="nome_newsletter" name="nome" placeholder="Nome">
+                    <input type="email" id="email_newsletter" name="email" required placeholder="E-mail">
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+                </div>
+
+                <div>
+                    <label for="aceitar_emails">
+                        <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
+                        Aceito receber e-mails promocionais
+                    </label>
+
+                    <label for="alertas_sms">
+                        <input type="checkbox" id="alertas_sms" name="alertas_sms">
+                        Gostaria de receber alertas por SMS
+                    </label>
+
+                    <label for="whatsapp">
+                        <input type="checkbox" id="whatsapp" name="whatsapp">
+                        Gostaria de receber alertas por WhatsApp
+                    </label>
+                </div>
+                <input type="submit" value="Assinar">
+            </form>
         </div>
     </aside>
     <footer>
-        <section id="form">
-            <ul>
-                <li><a href="/contato.html">Fale com VibeVerse</a></li>
-            </ul>
+        <section>
+            <a href="/contato.html">Fale com VibeVerse</a>
             <p>&copy; <span itemprop="copyrightYear">2023</span>
                 <span itemprop="copyrightHolder"></span>
             </p>
+        </section>
         </section>
     </footer>
 </body>

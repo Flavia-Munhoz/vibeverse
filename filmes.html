@@ -26,33 +26,34 @@
     </header>
     <main>
         <h1>Filmes</h1>
-<section class="content">
-    <div class="movie">
-        <img src="img/milagre.jpg" alt="Filme 1">
-        <div class="movie-info">
-            <h2>Milagre na Cela 7</h2>
-            <p>Durante o golpe de estado na Turquia em 1980, Memo, um pastor com deficiência mental, é acusado injustamente do assassinato da filha de um comandante militar...</p>
-            <div class="rating">
-                <input type="radio" id="star5" name="rating1" value="5">
-                <label for="star5">&#9733;</label>
-                <!-- Adicione uma seção para a avaliação de quem assistiu -->
-                <div class="user-review">
-                    <img src="caminho/para/a/foto.jpg" alt="Foto do usuário">
-                    <p>Depoimento do usuário sobre o filme.</p>
+        <section class="content">
+            <div class="movie">
+                <img src="img/milagre.jpg" alt="Filme 1">
+                <div class="movie-info">
+                    <h2>Milagre na Cela 7</h2>
+                    <p>Durante o golpe de estado na Turquia em 1980, Memo, um pastor com deficiência mental, é acusado
+                        injustamente do assassinato da filha de um comandante militar...</p>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating1" value="5">
+                        <label for="star5">&#9733;</label>
+                        <!-- Adicione uma seção para a avaliação de quem assistiu -->
+                        <div class="user-review">
+                            <img src="caminho/para/a/foto.jpg" alt="Foto do usuário">
+                            <p>Depoimento do usuário sobre o filme.</p>
+                        </div>
+                        <!-- Fim da seção de avaliação de quem assistiu -->
+                        <input type="radio" id="star4" name="rating1" value="4">
+                        <label for="star4">&#9733;</label>
+                        <input type="radio" id="star3" name="rating1" value="3">
+                        <label for="star3">&#9733;</label>
+                        <input type="radio" id="star2" name="rating1" value="2">
+                        <label for="star2">&#9733;</label>
+                        <input type="radio" id="star1" name="rating1" value="1">
+                        <label for="star1">&#9733;</label>
+                    </div>
                 </div>
-                <!-- Fim da seção de avaliação de quem assistiu -->
-                <input type="radio" id="star4" name="rating1" value="4">
-                <label for="star4">&#9733;</label>
-                <input type="radio" id="star3" name="rating1" value="3">
-                <label for="star3">&#9733;</label>
-                <input type="radio" id="star2" name="rating1" value="2">
-                <label for="star2">&#9733;</label>
-                <input type="radio" id="star1" name="rating1" value="1">
-                <label for="star1">&#9733;</label>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <section class="content">
             <div>
@@ -79,21 +80,20 @@
             <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
             <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
 
-            <form action="#" method="post">
+            <form action="./login.html" method="post">
                 <div>
-                    <input type="text" id="nome" name="nome" placeholder="Nome">
-                    <input type="email" id="email" name="email" required placeholder="E-mail">
-                    <input type="phone" id="telefone" name="telefone" placeholder="Telefone">
+                    <input type="text" id="nome_newsletter" name="nome" placeholder="Nome">
+                    <input type="email" id="email_newsletter" name="email" required placeholder="E-mail">
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
                 </div>
 
                 <div>
-                    <label for="acept_emails">
-
+                    <label for="aceitar_emails">
                         <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
                         Aceito receber e-mails promocionais
                     </label>
 
-                    <label for="alert_sms">
+                    <label for="alertas_sms">
                         <input type="checkbox" id="alertas_sms" name="alertas_sms">
                         Gostaria de receber alertas por SMS
                     </label>
@@ -103,18 +103,17 @@
                         Gostaria de receber alertas por WhatsApp
                     </label>
                 </div>
-                <input type="submit" value="Assinar" formaction="./login.html">
+                <input type="submit" value="Assinar">
             </form>
         </div>
     </aside>
     <footer>
-        <section id="form">
-            <ul>
-                <li><a href="/contato.html">Fale com VibeVerse</a></li>
-            </ul>
+        <section>
+            <a href="/contato.html">Fale com VibeVerse</a>
             <p>&copy; <span itemprop="copyrightYear">2023</span>
                 <span itemprop="copyrightHolder"></span>
             </p>
+        </section>
         </section>
     </footer>
 

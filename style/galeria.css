@@ -37,8 +37,6 @@ nav {
 
 
 footer {
-    position: absolute;
-    bottom: -820px;
     width: 100%;
     background: url("/img/areta-login.png");
 }
@@ -116,8 +114,6 @@ nav a {
 
 aside {
     width: 100%;
-    position: absolute;
-    bottom: -740px;
     text-align: center;
     background-color: #000;
 

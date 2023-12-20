@@ -14,50 +14,17 @@
   <header>
     <a href="./index.html" id="logo"><img src="./img/logov&v.png" alt="logo-vibe-verse"></a>
     <nav id="menu">
-        <a href="/index.html">Home</a>
-        <a href="/filmes.html">Filmes</a>
-        <a href="/series.html">Séries</a>
-        <a href="/shows.html">Shows</a>
-        <a href="/rock.html">Rock</a>
-        <a href="/hiphop.html">HipHop</a>
-        <a href="/origens.html">Origens</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="/login.html">Login</a>
+      <a href="/index.html">Home</a>
+      <a href="/filmes.html">Filmes</a>
+      <a href="/series.html">Séries</a>
+      <a href="/shows.html">Shows</a>
+      <a href="/rock.html">Rock</a>
+      <a href="/hiphop.html">HipHop</a>
+      <a href="/origens.html">Origens</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="/login.html">Login</a>
     </nav>
-</header>
-  <aside>
-    <div>
-      <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
-      <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
-
-      <form action="#" method="post">
-        <div>
-          <input type="text" id="nome" name="nome" placeholder="Nome">
-          <input type="email" id="email" name="email" required placeholder="E-mail">
-          <input type="phone" id="telefone" name="telefone" placeholder="Telefone">
-        </div>
-
-        <div>
-          <label for="acept_emails">
-
-            <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
-            Aceito receber e-mails promocionais
-          </label>
-
-          <label for="alert_sms">
-            <input type="checkbox" id="alertas_sms" name="alertas_sms">
-            Gostaria de receber alertas por SMS
-          </label>
-
-          <label for="whatsapp">
-            <input type="checkbox" id="whatsapp" name="whatsapp">
-            Gostaria de receber alertas por WhatsApp
-          </label>
-        </div>
-        <input type="submit" value="Assinar" formaction="./login.html">
-      </form>
-    </div>
-  </aside>
+  </header>
   <main>
     <h1>Sobre VibeVerse</h1>
     <section id="manifesto">
@@ -100,16 +67,47 @@
       <img src="./img/atlanta.jpg" alt="Imagem à Direita Série ">
     </section>
   </main>
+  <aside>
+    <div>
+      <h2>Assine nossa newsletter e ganhe muitos prêmios!</h2>
+      <p>Concorra a ingressos e receba as melhores novidades em seu email.</p>
+
+      <form action="./login.html" method="post">
+        <div>
+          <input type="text" id="nome_newsletter" name="nome" placeholder="Nome">
+          <input type="email" id="email_newsletter" name="email" required placeholder="E-mail">
+          <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+        </div>
+
+        <div>
+          <label for="aceitar_emails">
+            <input type="checkbox" id="aceitar_emails" name="aceitar_emails">
+            Aceito receber e-mails promocionais
+          </label>
+
+          <label for="alertas_sms">
+            <input type="checkbox" id="alertas_sms" name="alertas_sms">
+            Gostaria de receber alertas por SMS
+          </label>
+
+          <label for="whatsapp">
+            <input type="checkbox" id="whatsapp" name="whatsapp">
+            Gostaria de receber alertas por WhatsApp
+          </label>
+        </div>
+        <input type="submit" value="Assinar">
+      </form>
+    </div>
+  </aside>
   <footer>
-    <section id="form">
-      <ul>
-        <li><a href="/contato.html">Fale com VibeVerse</a></li>
-      </ul>
-      <p>&copy; <span itemprop="copyrightYear">2023</span>
-        <span itemprop="copyrightHolder"></span>
-      </p>
+    <section>
+        <a href="/contato.html">Fale com VibeVerse</a>
+        <p>&copy; <span itemprop="copyrightYear">2023</span>
+            <span itemprop="copyrightHolder"></span>
+        </p>
     </section>
-  </footer>
+    </section>
+</footer>
 </body>
 
 </html>
